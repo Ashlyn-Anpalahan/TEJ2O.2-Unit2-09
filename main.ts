@@ -19,14 +19,16 @@ input.onGesture(Gesture.Shake, function () {
     randomNumber = randint(0, 2)
     basic.clearScreen()
 
-// if rock
+    // if rock
     if (randomNumber == 0) {
         basic.showIcon(IconNames.SmallSquare) 
     }
-// if paper
+
+    // if paper
     if (randomNumber == 1) {
         basic.showIcon(IconNames.Square)
     }
+
 // if scissors
     if (randomNumber == 2) {
         basic.showIcon(IconNames.Scissors)
@@ -53,3 +55,4 @@ input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     basic.showIcon(IconNames.Happy)
 })
+
